@@ -1,5 +1,21 @@
+* `make` - compiles the program
+* `make compile` - compiles the program
+* `make run` - compiles the program and runs it with test1 and output to stdout
+* `make clean` - cleans unwanted files
+* `make zip` - cleans unwanted files and make archive for submission
+* `make test` - compiles the program and runs `tests/test.sh`
+
+## Description
+Graph is loaded from stdin in format defined in assignment. Any line (edge) not satisfying this format is ignored. States of every edge get sorted and then the whole graph is sorted. This way any duplicate edges get removed.
+
+The program generates all subsets of the set of the loaded edges (hence big memory requirements in `test07` and `test09`). After that a check is applied for each subset to determine if it is a spanning tree of the original graph. If it is, it gets printed in required format. The chechking term `isBone` is explained with comments in `src.pl`.
+
 ## Tests
-This `TIMES.md` is regenerated for every run of `tests/test.sh`.
+Test times in this file were taken on Merlin. They do not include `test07` and `test09` because these graphs take too much memory to calculate and crash on Merlin.
+
+Tests in `TIMES.md` were run on my PC. Project files were stored on Windows filesystem but execution were made via WSL.
+
+To run test script with tests `test07` and `test09`, remove their `.nsfm` (not safe for merlin) extension and uncomment line 5 in `src.pl`, so Prolog has enough memory to execute these tests.
 
 | Test | time 1 | time 2 | time 3 | time 4 | time 5 | time 6 | time 7 | time 8 | time 9 | time 10 | AVG |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

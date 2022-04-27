@@ -8,7 +8,7 @@ REPEATS=10
 
 # Prints header line
 echo '## Tests' > TIMES.md
-echo "This `TIMES.md` is regenerated for every run of `tests/test.sh`." >> TIMES.md
+echo "This `TIMES.md` is regenerated for every run of `make test`." >> TIMES.md
 echo >> TIMES.md
 
 # Print table header
@@ -36,7 +36,6 @@ for test in tests/*.in; do
         diffTime=$((($endTime-$startTime)/1000000))
         totalTime=$(($totalTime+$diffTime))
         echo -n " $diffTime ms |" >> TIMES.md
-
     done
     avgTime=$(($totalTime/$REPEATS))
     echo " $avgTime ms |" >> TIMES.md

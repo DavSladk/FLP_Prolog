@@ -10,4 +10,4 @@ clean:
 	rm -f flp21-log flp-log-xsladk07.zip
 
 zip: clean
-	zip flp-log-xsladk07.zip src.pl makefile README.md
+	zip flp-log-xsladk07.zip src.pl makefile README.md tests/*

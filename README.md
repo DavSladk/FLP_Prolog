@@ -1,6 +1,6 @@
 * `make` - compiles the program
 * `make compile` - compiles the program
-* `make run` - compiles the program and runs it with test1 and output to stdout
+* `make run` - compiles the program and runs it with `test01` and output to stdout
 * `make clean` - cleans unwanted files
 * `make zip` - cleans unwanted files and make archive for submission
 * `make test` - compiles the program and runs `tests/test.sh`

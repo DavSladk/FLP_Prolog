@@ -5,3 +5,4 @@
 !.gitignore
 !tests/
 !tests/*
+!test.sh

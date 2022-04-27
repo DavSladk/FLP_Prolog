@@ -46,7 +46,7 @@ isBone([[S1,S2]|T],[],[]) :-
 isBone([[S1,S2]|T],B,V) :-
     (memberchk(S1,V),\+memberchk(S2,V);\+memberchk(S1,V),memberchk(S2,V)),
     append(T,B,C),
-    isBone(C,[],[S1,S2|S]).
+    isBone(C,[],[S1,S2|V]).
 % If neither state in edge was visited, then put edge into buffer.
 isBone([[S1,S2]|T],B,V) :-
     \+ memberchk(S1,V),

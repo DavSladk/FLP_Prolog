@@ -3,4 +3,5 @@
 !README.md
 !src.pl
 !.gitignore
+!tests/
 !tests/*

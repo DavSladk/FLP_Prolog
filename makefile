@@ -7,7 +7,7 @@ run:
 	./flp21-log < tests/test1.in
 
 clean:
-	rm -f flp21-log flp-log-xsladk07.zip tests/tests.out
+	rm -f flp21-log flp-log-xsladk07.zip
 
 zip: clean
 	zip flp-log-xsladk07.zip src.pl makefile README.md tests/*.in tests/test.sh

@@ -2,7 +2,7 @@
 % Author: Bc. David Sladký
 % Login: xsladk07
 main :-
-    set_prolog_flag(stack_limit, 2_147_483_648),
+    %set_prolog_flag(stack_limit, 2_147_483_648),
     read_lines(Ls),
     loadData(Ls,Es,_),
     sort(Es, Ess),

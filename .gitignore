@@ -6,3 +6,4 @@
 !.gitignore
 !tests/
 !tests/*.in
+!tests/*.nsfm

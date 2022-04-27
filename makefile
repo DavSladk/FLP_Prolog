@@ -10,7 +10,7 @@ clean:
 	rm -f flp21-log flp-log-xsladk07.zip tests/tests.out
 
 zip: clean
-	zip flp-log-xsladk07.zip src.pl makefile README.md tests/*
+	zip flp-log-xsladk07.zip src.pl makefile README.md tests/*.in tests/test.sh
 
 test: compile
 	bash tests/test.sh

@@ -37,6 +37,7 @@ isBone([],[],V) :-
 % If both states of edge are same -> fail.
 isBone([[S1,S2]|_],_,_) :-
     S1 == S2,
+    !,
     false.
 % Starting term - put both states of edge into visited states
 isBone([[S1,S2]|T],[],[]) :-

@@ -1,7 +1,7 @@
 .PHONY: compile run zip clean
 
 compile: src.pl
-	swipl -g main -o flp21-log -c src.pl
+	swipl -q -g main -o flp21-log -c src.pl
 
 run:
 	./flp21-log < tests/test1.in

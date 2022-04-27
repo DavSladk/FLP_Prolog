@@ -1,6 +1,6 @@
-% Name: Kostra grafu (spanning tree)
-% author: Bc. David Sladký
-% login: xsladk07
+% Project: Kostra grafu (spanning tree)
+% Author: Bc. David Sladký
+% Login: xsladk07
 main :-
     read_lines(Ls),
     loadData(Ls,Es,_),

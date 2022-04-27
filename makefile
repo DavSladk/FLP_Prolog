@@ -13,4 +13,4 @@ zip: clean
 	zip flp-log-xsladk07.zip src.pl makefile README.md tests/*
 
 test: compile
-	bash test.sh
+	bash tests/test.sh

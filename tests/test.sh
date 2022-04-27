@@ -4,41 +4,40 @@
 # Login: xsladk07
 
 rm -f tests/tests.out
-REPEATS=5
+REPEATS=10
 
 # Prints header line
-echo '## Tests' > README.md
-echo 'This README is regenerated for every run of test.sh.' >> README.md
-echo 'Original times mesured on merlin.' >> README.md
-echo >> README.md
+echo '## Tests' > TIMES.md
+echo 'This TIMES is regenerated for every run of test.sh.' >> TIMES.md
+echo >> TIMES.md
 
 # Print table header
-echo -n '| Test |' >> README.md
+echo -n '| Test |' >> TIMES.md
 for ((i=1;i<=REPEATS;i++)); do
-    echo -n " time $i |" >> README.md
+    echo -n " time $i |" >> TIMES.md
 done
-echo " AVG |" >> README.md
+echo " AVG |" >> TIMES.md
 
 # Prints table header separator
-echo -n '| --- |' >> README.md
+echo -n '| --- |' >> TIMES.md
 for ((i=1;i<=REPEATS;i++)); do
-    echo -n " --- |" >> README.md
+    echo -n " --- |" >> TIMES.md
 done
-echo ' --- |' >> README.md
+echo ' --- |' >> TIMES.md
 
 # Executes tests, measure their duration and prints the results
 for test in tests/*.in; do
     totalTime=0
-    echo -n "| $test |" >> README.md
+    echo -n "| $test |" >> TIMES.md
     for ((i=1;i<=REPEATS;i++)); do
         startTime=$(date +%s%N)
         ./flp21-log < $test > /dev/null
         endTime=$(date +%s%N)
         diffTime=$((($endTime-$startTime)/1000000))
         totalTime=$(($totalTime+$diffTime))
-        echo -n " $diffTime ms |" >> README.md
+        echo -n " $diffTime ms |" >> TIMES.md
 
     done
     avgTime=$(($totalTime/$REPEATS))
-    echo " $avgTime ms |" >> README.md
+    echo " $avgTime ms |" >> TIMES.md
 done

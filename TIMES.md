@@ -1,5 +1,5 @@
 ## Tests
-This 'TIMES.md' is regenerated for every run of test.sh.
+This `TIMES.md` is regenerated for every run of `test.sh`.
 
 | Test | time 1 | time 2 | time 3 | time 4 | time 5 | time 6 | time 7 | time 8 | time 9 | time 10 | AVG |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

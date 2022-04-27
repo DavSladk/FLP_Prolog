@@ -1,6 +1,7 @@
 *
 !makefile
 !README.md
+!TIMES.md
 !src.pl
 !.gitignore
 !tests/

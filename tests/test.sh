@@ -32,7 +32,7 @@ for test in tests/*.in; do
     echo -n "| $test |" >> README.md
     for ((i=1;i<=REPEATS;i++)); do
         startTime=$(date +%s%N)
-        ./flp21-log < $test >> tests/tests.out
+        ./flp21-log < $test > /dev/null
         endTime=$(date +%s%N)
         diffTime=$((($endTime-$startTime)/1000000))
         totalTime=$(($totalTime+$diffTime))

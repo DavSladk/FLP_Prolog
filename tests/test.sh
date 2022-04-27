@@ -8,7 +8,7 @@ REPEATS=10
 
 # Prints header line
 echo '## Tests' > TIMES.md
-echo "This 'TIMES.md' is regenerated for every run of test.sh." >> TIMES.md
+echo "This `TIMES.md` is regenerated for every run of `tests/test.sh`." >> TIMES.md
 echo >> TIMES.md
 
 # Print table header

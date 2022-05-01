@@ -4,7 +4,7 @@ compile: src.pl
 	swipl -q -g main -o flp21-log -c src.pl
 
 run:
-	./flp21-log < tests/test1.in
+	./flp21-log < tests/test01.in
 
 clean:
 	rm -f flp21-log flp-log-xsladk07.zip

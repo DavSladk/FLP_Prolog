@@ -1,3 +1,5 @@
+Points: 8/8
+
 * `make` - compiles the program
 * `make compile` - compiles the program
 * `make run` - compiles the program and runs it with `test01` and output to stdout
